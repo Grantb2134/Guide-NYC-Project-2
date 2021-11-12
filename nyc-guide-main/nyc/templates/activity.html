@@ -1,0 +1,12 @@
+<h1>{{ activity | title }}</h1>
+
+<ul>
+    {% for location in activities %}
+    <li>
+        <a href="{% url 'venue' borough activity location %}"
+            >{{ location|title }}</a
+        >
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'city' %}">Home-Page</a>
