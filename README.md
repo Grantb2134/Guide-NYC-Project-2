@@ -1,5 +1,8 @@
 # <div align="center">**You Won't Find A Better City!**</div> 
 <br>
+First and foremost my partner and I would like to thank you for your time and consideration, as you allow us to take you on a journey through America's only city worth talking about. Enjoy!
+
+The journey begins with an introduction and a list of the five boroughs that make New York City. Once you've selected the borough of your desire, you're then taken to a list of activites of that particular borough. From there you'll make a decsion, but there's no harm in looking at them all, you wont regret it. Then you open the door and the first thing you see is a wonderfull image representing that venue you've choosen along with a brief description. Its only brief so you can then add and make it your own. If you have time live a little return home utilizing the *Return Home* link and see all that the five boroughs have to offer. After all it doesnt get any better than NYC!
 <!-- The README.md must contain the following information
 
     Name of project
@@ -48,7 +51,45 @@ Once you have compleated the steps above your now able to continue with the step
 ## <div align="center">***How To Run The Django App***</div>
 ---
 <br>
+Now that your virtual environment is created and up and running and Django is installed. Your now ready to create a Django project and application.
 
-First and foremost my partner and I would like to thank you for your time and consideration, as you allow us to take you on a journey through America's only city worth talking about. Enjoy!
+First you want to create the project
+* Enter **django-admin startproject (the name of your project)**
 
-The journey begins with an introduction and a list of the five boroughs that make New York City. Once you've selected the borough of your desire, you're then taken to a list of activites of that particular borough. From there you'll make a decsion, but there's no harm in looking at them all, you wont regret it. Then you open the door and the first thing you see is a wonderfull image representing that venue you've choosen along with a brief description. Its only brief so you can then add and make it your own. If you have time live a little return home utilizing the *Return Home* link and see all that the five boroughs have to offer. After all it doesnt get any better than NYC!
+Then you want to enter the folder of the project you just created.
+* **cd (the name of your project)**
+
+Then you want to run the server
+* Enter **python manage.py runserver** when you go to the local host in your browser *localhost:8000* you should see the pic below.
+>>![](https://i.imgur.com/5jaC2y7.png)
+
+Once you have the server running you can now create an app.
+* Enter **python manage.py startapp (the name of your app)**
+
+Its best for you then to register your new app with your project. From your explorer in VS Code you want to navigate to the name of your project. In that folder you'd see **settings.py** enter the python script. In your editor you want to add it to the installed apps portion.
+*       INSTALLED_APPS= [
+        '(app name).app.(AppnameConfig)'],
+        *It's important that the first letter is uppercase as well as the 'C' in config.
+    
+At this point you should be in sync with the project you created. Now you can migrate the database.
+* Enter **python manage.py migrate**
+
+Then you need to create a *superuser* this would allow you to utilize the admin page. Which allows you to review the data in your database.
+* Enter **python manage.py createsuperuser**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
