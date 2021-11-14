@@ -42,7 +42,7 @@ Once you have compleated the steps above your now able to continue with the step
 
 * Enter **pip install django** to install Django
 * Then enter **pip freeze > requirements.txt**
-* It would be good to do a *sanity* check after by entering **pip freeze**. This prompt shows all project dependencies installed.  Just to make sure everthing is in order to move forward.
+* It would be good to do a *sanity* check after by entering **pip freeze** This prompt shows all project dependencies installed.  Just to make sure everthing is in order to move forward.
 
 <br>
 <br>
@@ -74,9 +74,9 @@ Its best for you then to register your new app with your project. From your expl
 At this point you should be in sync with the project you created. Now you can migrate the database.
 * Enter **python manage.py migrate**
 
-Then you need to create a *superuser* this would allow you to utilize the admin page. Which allows you to review the data in your database.
+Then you need to create a *superuser* this would allow you to utilize the admin page. Which allows you to review the data in your database. 
 * Enter **python manage.py createsuperuser**
-
+Follow the prompt, create a username and password
 
 
 
