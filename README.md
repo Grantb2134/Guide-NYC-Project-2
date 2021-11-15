@@ -41,7 +41,7 @@ The journey begins with an introduction and a list of the five boroughs that mak
 Once you have compleated the steps above your now able to continue with the steps below.
 
 * Enter **pip install django** to install Django
-* Then enter **pip freeze > requirements.txt**
+* Then enter **pip install -r requirements.txt**
 * It would be good to do a *sanity* check after by entering **pip freeze** This prompt shows all project dependencies installed.  Just to make sure everthing is in order to move forward.
 
 <br>
