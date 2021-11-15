@@ -1,6 +1,44 @@
-<h1>{{ location | title }}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{location}}</title>
+    <style>
+        h1{
+            Color: goldenrod;
+            font-size: 80px;
+            text-align: center;
+        }
+        h2{
+            font-style: italic;
+            color: blue;
+            text-align: center;
+        }
+        p{
+            font-style: oblique;
+            color: orangered;
+        }
+        a{
+            color: goldenrod;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ location | title }}</h1>
 
+    {% for venue in venues %}
 
-<img style="display: block" src="{{ venue.img_link }}" height="400" />    
-<p>{{ venue.description }}</p>
-<a href="{% url 'city' %}">Home-Page</a>
+        <h2>{{venue.hdr}}</h2>
+        <center><img style="display: block" src="{{ venue.img_link }}" height="400" /></center>   
+        <p>{{ venue.description }}</p>
+        
+
+    {% endfor %}
+    <center><a href="{% url 'city' %}">Home-Page</a></center>
+</body>
+</html>
